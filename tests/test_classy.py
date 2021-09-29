@@ -6,7 +6,7 @@ import ariel.classy as c
 
 def test_hannah():
     client = docker.from_env()
-    client.containers.run("hannah",command='pytest',remove=True,)
+    client.containers.run("tridelt/hannah",command='pytest',remove=True,)
 
     # try:
     #     client.containers.run("hannah",command='pytest',remove=True,)
